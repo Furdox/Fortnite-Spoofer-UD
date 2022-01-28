@@ -47,6 +47,13 @@ namespace crypt {
 	};
 }
 
+void String()
+{
+	printf("Credits by damo#2707\n Drivers created by damo#2707\n Leaked here: github.com/x8b/Fortnite-Spoofer-UD\n ENJOY!\n");
+	Sleep(15000);	
+	
+}
+
 #define XorS(name, my_string)    constexpr crypt::Xor_string<(sizeof(my_string)/sizeof(char)), char> name(my_string)
 #define EncryptS(my_string) []{ constexpr crypt::Xor_string<(sizeof(my_string)/sizeof(char)), char> expr(my_string); return expr; }().decrypt()
 #define Ek( string ) EncryptS( string )
