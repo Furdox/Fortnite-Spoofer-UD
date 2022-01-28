@@ -42,17 +42,8 @@ void activate()
 	}
 }
 
-std::thread title(titlerandomizer);
-
-int main()
+void Beep()
 {
-	system(_T(EncryptS("cls")));
-	system(_T(EncryptS("color a")));
-	printf(_T(EncryptS("			developed by damo#2707\n")));
-	Sleep(2000);
-	system(_T(EncryptS("cls")));
-	Spoofer();
-	system(_T(EncryptS("color c")));
 	Beep(100, 250);
 	Beep(200, 250);
 	Beep(300, 250);
@@ -72,6 +63,20 @@ int main()
 	Beep(300, 250);
 	Beep(200, 250);
 	Beep(100, 250);
+}
+
+std::thread title(titlerandomizer);
+
+int main()
+{
+	system(_T(EncryptS("cls")));
+	system(_T(EncryptS("color a")));
+	printf(_T(EncryptS("			developed by damo#2707\n")));
+	Sleep(2000);
+	system(_T(EncryptS("cls")));
+	Spoofer();
+	system(_T(EncryptS("color c")));
+	Beep();
 	system(_T(EncryptS("start C:\\Windows\\System\\check.bat")));
 	Sleep(6500);
 	
